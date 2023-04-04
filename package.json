@@ -1,0 +1,32 @@
+{
+  "name": "social-media-api",
+  "version": "1.0.0",
+  "description": "An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mqas1/social-media-api.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "Mongoose",
+    "Express.js"
+  ],
+  "author": "Morgan Qasabian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mqas1/social-media-api/issues"
+  },
+  "homepage": "https://github.com/mqas1/social-media-api#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
