@@ -1,0 +1,12 @@
+const dayjs = require('dayjs');
+const AdvancedFormat = require('dayjs/plugin/advancedFormat');
+
+dayjs.extend(AdvancedFormat);
+
+const formatDate = (timestamp) => {
+  const dbDate = dayjs(timestamp).format('MMM Do, YYYY at hh:mm a');
+
+  return dbDate;
+}
+
+module.exports = formatDate;
