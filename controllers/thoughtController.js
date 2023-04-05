@@ -18,6 +18,14 @@ module.exports ={
       .catch((err) => res.status(500).json(err));
   },
   // creates a thought and pushes it to the associated user's thought field/array
+  /* 
+  // example data
+    {
+      "thoughtText": "Here's a cool thought...",
+      "username": "lernantino",
+      "userId": "5edff358a0fcb779aa7b118b"
+    }
+  */
   createThought(req, res) {
     Thought.create(req.body)
       .then((dbThoughtData) => {
@@ -73,6 +81,13 @@ module.exports ={
       .catch((err) => res.status(500).json(err));
   },
   // creates a reaction and stores it in a single thought's `reactions` field/array
+  /* 
+    // example data
+      {
+        "username": "jimmy",
+        "reactionBody": "What a great idea!"
+      }
+  */
   addReaction(req, res) {
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
