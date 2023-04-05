@@ -7,7 +7,7 @@ Social Media has taken over the internet and is a large part of many peoples' li
 
 But the few big platforms are not the final say on what social media can be.
 
-The source code in this repository contains everything a social media startup needs to get a NoSQL database off the ground. Users can share their thoughts, make friends, and react to their friend's thoughts.
+The source code in this repository contains everything a social media startup needs to get a NoSQL database off the ground. Users can share their thoughts, make friends, and react to their friends' thoughts.
 
 This application employs an Express.js API that is configured with Mongoose to interact with a MongoDB database. The API routes perform RESTful CRUD operations.
 
