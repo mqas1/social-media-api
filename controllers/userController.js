@@ -20,7 +20,14 @@ module.exports = {
       )
       .catch((err) => res.status(500).json(err));
   },
-// create a new user
+  // create a new user
+  /* 
+    // example data
+    {
+      "username": "lernantino",
+      "email": "lernantino@gmail.com"
+    }
+  */
   createUser(req, res) {
     User.create(req.body)
       .then((dbUserData) => res.json(dbUserData))
