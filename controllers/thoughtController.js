@@ -94,7 +94,7 @@ module.exports ={
       { $push: { reactions: req.body } },
       { runValidators: true, new: true }
     )
-      then((updatedThought) => 
+      .then((updatedThought) => 
         !updatedThought
           ? res.status(404).json({ message: 'No thought with this ID!' })
           : res.json(updatedThought)
